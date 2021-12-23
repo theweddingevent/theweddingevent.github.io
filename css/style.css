@@ -976,11 +976,6 @@ form label {
 /*  }*/
 /*}*/
 
-@media only screen and (min-width: 400px) {
-  .background-img {
-    background-image:url("../img/engagement2.jpg");
-  }
-}
 
 .simply-countdown > .simply-section > div {
   /* countdown block inner div */
