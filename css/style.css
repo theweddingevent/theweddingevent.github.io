@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: #3470a1;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -1680,8 +1680,9 @@ form label {
   padding: 18px 36px !important;
 }
 .btn:hover, .btn:active, .btn:focus {
-  box-shadow: none !important;
-  outline: none !important;
+  background-color: #3470a1;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .btn-primary {
@@ -1848,6 +1849,27 @@ form label {
   height: 100%;
   z-index: 9999;
   background: url(../images/loader.gif) center no-repeat #fff;
+}
+
+.btn-custom {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn-custom:hover {background-color: #3e8e41}
+
+.btn-custom:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .js .animate-box {
