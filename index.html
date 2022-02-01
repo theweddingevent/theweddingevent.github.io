@@ -95,7 +95,7 @@
         </div>
     </nav>
 
-    <header id="fh5co-header" class="fh5co-cover" style="background-image:url(img/pre1.jpeg)" role="banner"
+    <header id="fh5co-header" class="fh5co-cover" style="background-image:url(img/pre1.jpeg); height: 800px" role="banner"
             data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
@@ -103,7 +103,7 @@
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <div class="display-t">
                         <div class="display-tc animate-box" data-animate-effect="fadeIn">
-                            <p style="margin-top: 320px; font-size: 22px; color: #cacaca"><b>You Are Invited!</b></p>
+                            <p style="margin-top: 500px; font-size: 22px; color: #cacaca"><b>You Are Invited!</b></p>
                             <p style="margin-top: -20px; font-size: 15px; color: #cacaca">The Wedding Celebration of</p>
                             <h1 style="margin-top: -20px">Amy &amp; Elvan</h1>
                             <p style="margin-top: 20px" onclick="do_change()"><a id="iconPlay" class="btn btn-sm">Open Invitation</a></p>
@@ -115,7 +115,7 @@
     </header>
 
     <div id="bodys" style="display: none">
-        <img src="img/pre4.jpeg" alt="groom" class="img-responsive"  style="display: none">
+        <img src="img/pre4.jpeg" alt="groom" class="img-responsive fadeOutUp">
         <div id="fh5co-couple">
             <div class="container">
                 <div class="row">
@@ -397,32 +397,29 @@
                 </div>
             </div>
         </div>
-    </div>
+        <footer id="fh5co-footer" role="contentinfo">
+            <div class="container">
 
-    <footer id="fh5co-footer" role="contentinfo">
-        <div class="container">
-
-            <div class="row copyright">
-                <div class="col-md-12 text-center">
-                    <p>
-                        <small class="block">&copy; 2022 The Wedding Event</small>
-                        <small class="block">Designed by <a target="_blank">elvan diano</a></small>
-                    </p>
-                    <p>
-                    <ul class="fh5co-social-icons">
-                        <li><a href="https://www.instagram.com/elvandiano/"><i class="icon-instagram"></i></a></li>
-                        <li><a href="https://www.facebook.com/gmcelvan/"><i class="icon-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/elvan-diano-8b03638a/"><i
-                                class="icon-linkedin"></i></a></li>
-                    </ul>
-                    </p>
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; 2022 The Wedding Event</small>
+                            <small class="block">Designed by <a target="_blank">elvan diano</a></small>
+                        </p>
+                        <p>
+                        <ul class="fh5co-social-icons">
+                            <li><a href="https://www.instagram.com/elvandiano/"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/gmcelvan/"><i class="icon-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/elvan-diano-8b03638a/"><i
+                                    class="icon-linkedin"></i></a></li>
+                        </ul>
+                        </p>
+                    </div>
                 </div>
+
             </div>
-
-        </div>
-    </footer>
-
-
+        </footer>
+    </div>
 </div>
 
 <div class="gototop js-top">
@@ -457,6 +454,7 @@
 
    function do_change() {
       document.getElementById("bodys").style.display = "block"
+      document.getElementById("fh5co-header").style.display = "none"
    }
 
    let mySong = document.getElementById("mySong")
